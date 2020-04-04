@@ -1,0 +1,45 @@
+.Toolbar {
+    background-color: rgb(255,209,102);
+    left: 0;
+    top: 0;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.DrawerToggle {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.DrawerToggle div {
+    width: 90%;
+    height: 3px;
+    background-color:black;
+}
+
+
+.Toolbar nav{
+    height: 100%;
+}
+
+.Logo{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,50 @@
+.BuildControls {
+    width: 100%;
+    background-color: rgb(243,243,243);
+    padding: 10px;
+}
+
+
+.Family1 {
+    text-align: center;
+}
+
+.Family2 {
+    border: 2px solid rgb(0,170,170);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 1.5% 2%;
+    margin: 1% auto;
+}
+
+.GoHomeButton{
+    padding: 5px;
+    width: 30%;
+    margin: 10px auto;
+    display: block;
+    background-color: rgb(255, 215, 235);
+    color: rgb(157,0,157);
+    border-radius: 8px;
+    border: 2px solid black;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.GoHomeButton:hover {
+    font-weight: 900;
+    border: 3px solid black;
+    cursor: pointer;
+    background-color:rgb(157,0,157);
+    color: white;
+}
+
+.GoHomeButton:disabled {
+    cursor: not-allowed;
+    background-color: #888888;
+    color: white
+}
+/*you can only use margin auto when the wrapper Family1 is set to text align center*/
+
+

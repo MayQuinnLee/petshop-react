@@ -1,0 +1,79 @@
+.BuildControl {
+    display: flex;
+    justify-content: center;
+}
+
+.BuildControl button{
+    display: block;
+    font-family: Roboto-Italic;
+    font-weight: 400;
+    font-style: italic;
+    padding: 5px;
+    margin: 5px;
+    width: 140px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid white;
+}
+
+.Label {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.Heart {
+    background-color: red;
+    height: 0.6em;
+    transform: rotate(-45deg);
+    width: 0.6em;
+    display: inline-block;
+}
+
+.Heart:before,
+.Heart:after {
+    content: '';
+    background-color: red;
+    border-radius: 60%;
+    height: 0.6em;
+    position: absolute;
+    width: 0.6em;
+}
+
+.Heart:before {
+    top: -0.30em;
+    left: 0;
+}
+
+.BuildControl .More {
+    background-color: rgb(255,255,174);
+}
+
+.BuildControl .More:hover {
+    background-color: rgb(255,173,62);
+    border: 3px solid black;
+}
+
+.BuildControl .Less {
+    background-color: rgb(200,234,240);
+}
+
+.BuildControl .Less:hover {
+    background-color: rgb(51,169,189);
+    border: 3px solid black;
+}
+
+.BuildControl button:disabled {
+    cursor: not-allowed;
+}
+
+.BuildControl button:hover:disabled {
+    background-color: rgb(200,234,240);
+    border: 2px solid white;
+}
