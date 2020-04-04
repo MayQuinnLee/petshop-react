@@ -51,7 +51,7 @@ class HomeBuilder extends Component {
         const updatedCount = this.state.adorableKids[type] - 1;
         const deductedAdorableKids = {...this.state.adorableKids};
         deductedAdorableKids[type] = updatedCount;
-        const updatedPrice = this.state.totalPrice + KIDS_LOVES[type];
+        const updatedPrice = this.state.totalPrice - KIDS_LOVES[type];
         this.setState({adorableKids: deductedAdorableKids, totalPrice: updatedPrice});
         this.updatePurchaseState(deductedAdorableKids);
     }
